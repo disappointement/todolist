@@ -1,0 +1,129 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background-color: #323232;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+input {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.container {
+  align-items: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-size: 6em;
+  font-weight: 900;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+.todo-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.todo-input {
+  width: 300px;
+  height: 40px;
+  border-width: 0px;
+  border-radius: 14px;
+
+  background-color: #4d4d4d;
+  margin-right: 15px;
+  padding-left: 10px;
+  border-color: #9a9a9a;
+
+  color: white;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.todo-add-button {
+  width: 50px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  background-color: #4d4d4d;
+  color: rgba(255, 255, 255, 0.863);
+  border-width: 0px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.todo-add-button:hover {
+  background-color: #5d5d5d;
+}
+
+.todo-add-button:active {
+  background-color: #6f6f6f;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 0px;
+}
+
+.todo-list li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  min-width: 500px;
+  height: 30px;
+  border: rgba(204, 217, 255, 0.239) 1px solid;
+  border-radius: 8px;
+  background-color: #4d4d4d;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  transition: background-color 0.15s;
+}
+
+.todo-list li.done {
+  background-color: rgb(71, 98, 64);
+}
+
+.todo-text {
+  flex: 80%;
+}
+
+.todo-delete-button,
+.todo-edit-button {
+  flex: 10px;
+  border: none;
+  background-color: #323232;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.todo-list li span {
+  font-size: 20px;
+  padding-top: 4px;
+  transition: color 0.3s;
+}
+
+.material-icons.edit-icon {
+  color: #ffffff;
+}
+
+.material-icons.delete-icon {
+  color: #ff9898;
+}
