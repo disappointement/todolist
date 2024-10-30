@@ -29,6 +29,19 @@
           placeholder="What do you need to do?"
         />
         <button class="todo-add-button" id="add-item-button">Add</button>
+        <select
+          name="Sort by"
+          id="sortOptions"
+          class="sorter"
+          onchange="sortlist(this.value)"
+        >
+          <option value="oldest">Oldest</option>
+          <option value="newest">Newest</option>
+          <option value="alphabetical-asc">Alphabetical Ascending</option>
+          <option value="alphabetical-desc">Alphabetical Descending</option>
+          <option value="done">Done</option>
+          <option value="not-done">Not Done</option>
+        </select>
       </div>
       <ul class="todo-list" id="list"></ul>
     </div>

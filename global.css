@@ -5,12 +5,10 @@ body {
   background-color: #323232;
 }
 
-button {
-  font-family: inherit;
-  font-size: 1em;
-}
-
-input {
+button,
+input,
+select,
+option {
   font-family: inherit;
   font-size: 1em;
 }
@@ -75,6 +73,26 @@ input {
   background-color: #6f6f6f;
 }
 
+.sorter {
+  padding: 4px;
+  min-width: 50px;
+  margin-left: 20px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #4d4d4d;
+  transition: all 0.15s;
+  color: white;
+}
+
+.sorter:hover {
+  cursor: pointer;
+  background-color: #5d5d5d;
+}
+
+.sorter:focus {
+  outline: none;
+}
+
 .todo-list {
   display: flex;
   flex-direction: column;
@@ -93,7 +111,7 @@ input {
   background-color: #4d4d4d;
   color: rgb(255, 255, 255);
   padding: 5px 10px;
-  transition: background-color 0.15s;
+  transition: all 0.15s;
 }
 
 .todo-list li.done {
